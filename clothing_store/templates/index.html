@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <h1 class="col-12 col-md-6 display-2">Приветствую вас в нашем магазине</h1><br>
+        <p class="col-12 col-md-8 display-4">У нас представлена самая разнообразная одежда и обувь</p>
+        <img src="../static/img/Clothes.jpg" class="col-12 col-md-5 img-fluid" alt="Модели одежды">
+        <img src="../static/img/CasualShoesMen.jpg" class="col-12 col-md-5 img-fluid" alt="Модели обуви">
+    </div>
+{% endblock %}

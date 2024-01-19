@@ -9,7 +9,7 @@ from registration_form_with_db.model import User
 class RegistrationForm(FlaskForm):
     first_name = StringField('Имя', validators=[DataRequired()])
     last_name = StringField('Фамилия', validators=[DataRequired()])
-    email = StringField('Email', validators=[DataRequired(), Email()])
+    email = EmailField('Email', validators=[DataRequired(), Email()])
     password = PasswordField('Пароль', validators=[DataRequired(), Length(min=6)])
     submit = SubmitField('Отправка данных')
 
